@@ -1,0 +1,5 @@
+export { default as MarvelPage } from './pages/MarvelPage'
+export { default as DcPage } from './pages/DcPage'
+export { default as SearchPage } from './pages/SearchPage'
+export { default as HeroPage } from './pages/HeroPage'
+export { default as HeroesRoutes } from './routes/HeroesRoutes'
