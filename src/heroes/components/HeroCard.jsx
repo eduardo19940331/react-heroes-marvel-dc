@@ -21,7 +21,7 @@ const HeroCard = ({
     characters,
 }) => {
 
-    const heroImageUrl = `heroes/${id}.jpg`;
+    const heroImageUrl = `${import.meta.env.BASE_URL}heroes/${id}.jpg`;
 
     return (
         <div className='col mt-2 animate__animated animate__fadeIn'>

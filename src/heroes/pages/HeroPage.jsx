@@ -21,7 +21,7 @@ const HeroPage = () => {
         <div className="row mt-5">
             <div className="col-4">
                 <img
-                    src={`heroes/${keyHero}.jpg`}
+                    src={`${import.meta.env.BASE_URL}heroes/${keyHero}.jpg`}
                     alt={hero.superhero}
                     className="img-thumbnail" />
             </div>
