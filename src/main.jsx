@@ -8,7 +8,7 @@ import HeroesApp from './HeroesApp';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/react-heroes-marvel-dc/'>
       <HeroesApp />
     </BrowserRouter>
   </StrictMode>
