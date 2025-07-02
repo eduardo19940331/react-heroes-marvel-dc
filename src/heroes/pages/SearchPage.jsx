@@ -30,7 +30,7 @@ const SearchPage = () => {
     };
 
     const printMesagge = useMemo(() => {
-        if (q.length <= 0) return null;
+        if (q.length <= 0) return <div className="alert alert-info animate__animated animate__fadeIn">Resultados de la busqueda <b>{q}</b></div>;
         return (heroes.length > 0) ?
             (<div className="alert alert-success animate__animated animate__fadeIn">Resultados de la busqueda <b>{q}</b></div>) :
             (<div className="alert alert-danger animate__animated animate__fadeIn">No hay coincidencias con la busqueda <b>{q}</b></div>);

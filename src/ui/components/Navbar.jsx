@@ -5,13 +5,7 @@ import { AuthContext } from '../../auth';
 
 export const Navbar = () => {
     const navigate = useNavigate();
-
     const { user, logout } = useContext(AuthContext);
-    // In custom
-    // if (!user?.logged) {
-    //     navigate('/login', { replace: true });
-    //     <Navigate to="/login" replace={true} />;
-    // }
     
     const onLogout = () => {
         logout();
@@ -19,7 +13,6 @@ export const Navbar = () => {
         <Navigate to="/login" replace={true} />;
         return;
     };
-    /////////
 
     return (
         <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2">
@@ -58,7 +51,7 @@ export const Navbar = () => {
                     <span className="nav-item nav-link text-primary">
                         {user?.name}
                     </span>
-                    <button className="nav-item nav-link btn" onClick={onLogout}>
+                    <button className="nav-item nav-link btn" onClick={onLogout} aria-label='btnLogout'>
                         Logout
                     </button>
                     {/* <NavLink
